@@ -14,25 +14,33 @@ def menu():
 
 while True:
     menu()
-    choice = input("Enter choice(1/2/3/4/5): ")
-
+    try:
+        choice =int(input("Enter choice(1/2/3/4/5): "))
+    except:
+          choice= -1
     
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
 
-    if choice == '1':
+    if choice == 1:
+            num1 = float(input("Enter first number: "))
+            num2= float(input("Enter second number: "))
             print("Respuesta=", add(num1, num2))
 
-    elif choice == '2':
+    elif choice == 2:
+            num1 = float(input("Enter first number: "))
+            num2= float(input("Enter second number: "))
             print("Respuesta=", subtract(num1, num2))
 
-    elif choice == '3':
+    elif choice == 3:
+            num1 = float(input("Enter first number: "))
+            num2= float(input("Enter second number: "))
             print("Respuesta=", multiply(num1, num2))
 
-    elif choice == '4':
+    elif choice == 4:
+            num1 = float(input("Enter first number: "))
+            num2= float(input("Enter second number: "))
             print("Respuesta=", divide(num1, num2))
         
-    elif choice == '5':
+    elif choice == 5:
             print("Exit")
             break
     else:
