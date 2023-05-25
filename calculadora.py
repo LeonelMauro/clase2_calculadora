@@ -9,6 +9,7 @@ def multiply(x, y):
 
 def divide(x, y):
     return x / y
+
 def menu():
     print("Select operation.\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Exit")
 
@@ -19,7 +20,6 @@ while True:
     except:
           choice= -1
     
-
     if choice == 1:
             num1 = float(input("Enter first number: "))
             num2= float(input("Enter second number: "))
